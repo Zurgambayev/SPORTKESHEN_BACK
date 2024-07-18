@@ -9,6 +9,9 @@ const roomParticipantSchema = new mongoose.Schema({
     foot: String,
     bestSkill: String,
     heightWeight: String,
+    isCaptain: {type: Boolean, default:false},
+    teamNumber: { type: Number, default:null}  
+
 },{timestamps:true})
 
 const RoomParticipant = mongoose.model('RoomParticipant', roomParticipantSchema);
